@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task10</title>
+</head>
+<body>
+    <script>
+        // problem1
+        var givenNumber = Number(prompt("Enter the Number : "))
+        divisors = 0;
+
+        for(i=0; i<givenNumber; i=i+1){
+            if(givenNumber%i == 0){
+                divisors = divisors + i 
+            }
+        }console.log(divisors)
+
+        // problem2
+        var givenNum = Number(prompt("Enter the number : "))
+
+        if(givenNum%2==0  || givenNum%3==0  || givenNum%4==0  || givenNum%5==0  || givenNum%6==0  || givenNum%7==0  || givenNum%8==0  || givenNum%9==0){
+            console.log(`${givenNum} is not a Prime number`)
+        }else{
+            console.log(`${givenNum} is a Prime number`)
+        }
+
+        // problem3
+        var rows = Number(prompt("Enter the number of rows : "))
+
+        for(i=1; i<=rows; i=i+1){
+            let stars = "* "
+            console.log(stars.repeat(i))
+        }
+            // for(i=rows; i>=1; i--){
+            //     let table = "* "
+            //     console.log(table.repeat(i))
+            // }
+
+
+    </script>
+</body>
+</html>
